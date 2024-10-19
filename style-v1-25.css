@@ -1,0 +1,503 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(255, 255, 255);
+      background-image: url('image/background.png');
+      background-size: auto auto;
+      background-repeat: no-repeat;
+      height: 3000px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      z-index: 1;
+  }
+
+  .aboutme {
+      position: relative;
+      top: 2800px;
+      left: 20px;
+      width: 100%;
+      height: 200px;
+      color: #222222;
+  }
+
+  .container {
+      background-color: rgb(20, 192, 245);
+      width: fit-content;
+      height: fit-content;
+      padding: 20px;
+      border-radius: 50px;
+      z-index: 1;
+  }
+
+  .button {
+      font-size: 20px;
+      width: fit-content;
+      height: fit-content;
+      border: none;
+      color: white;
+      background: #323336;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+  }
+
+  .reload {
+      position: relative;
+      top: 10px;
+      left: 10px;
+
+  }
+
+  .features-button {
+      position: absolute;
+      top: 10px;
+      right: 100px;
+  }
+
+  .features-popup {
+      width: 15cm;
+      height: fit-content;
+      padding: 20px;
+      color: white;
+      background-color: rgb(39, 39, 39);
+      visibility: hidden;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      z-index: 2;
+  }
+
+  .project-button {
+      font-size: 18px;
+      cursor: pointer;
+      color: #0e7aff;
+      z-index: 1;
+  }
+  .project-button ::after{
+    content: "";
+    width: 0;
+    background-color: aqua;
+  }
+  .project-button :hover::after{
+    width: fit-content;
+  }
+
+  .settings {
+      position: fixed;
+      top: 100px;
+      right: 0px;
+      width: 300px;
+      height: fit-content;
+      padding: 10px;
+      color: rgb(0, 0, 0);
+      background-color: rgb(20, 192, 245);
+      visibility: hidden;
+      transform: translate(-0%, -0%);
+      border-radius: 5px;
+      z-index: 2;
+  }
+
+  .circle-button {
+      position: inherit;
+      top: 2px;
+      right: 2px;
+      background-color: rgb(37, 35, 35);
+      color: rgb(230, 230, 230);
+      border-radius: 100px;
+      cursor: pointer;
+  }
+
+  .circle-button1 {
+      background-color: rgb(37, 35, 35);
+      color: rgb(230, 230, 230);
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+  .text {
+      position: relative;
+      top: 200px;
+      left: 400px;
+      z-index: 1;
+  }
+
+  .color-button {
+      position: fixed;
+      top: 100px;
+      right: 10px;
+      z-index: 3;
+  }
+
+  .wallpaperimage {
+      src: 'image/background.png';
+  }
+
+  /* increment decrement */
+  .incrementdecrement {
+      scroll-margin: 50px;
+      position: relative;
+      top: 1150px;
+      left: 20px;
+
+  }
+
+  .button1 {
+      font-size: 20px;
+      width: fit-content;
+      height: fit-content;
+      border: none;
+      cursor: pointer;
+      text-align: justify;
+      border-radius: 10px;
+      background-color: rgb(37, 35, 35);
+      color: rgb(230, 230, 230);
+      padding: 5px 10px 5px 10px;
+  }
+
+  .text1 {
+      font-size: 20px;
+      width: 175px;
+      height: 25px;
+      border: none;
+      text-align: center;
+      border-radius: 10px;
+      background-color: rgb(37, 35, 35);
+      color: rgb(230, 230, 230);
+      padding: 1px 5px 1px 5px;
+  }
+
+  /* login signup */
+  .loginsignup {
+      scroll-margin: 50px;
+      position: relative;
+      top: 1200px;
+      left: 20px;
+      z-index: 1;
+  }
+
+  .popup {
+      width: 8cm;
+      height: fit-content;
+      padding: 20px;
+      color: white;
+      background-color: rgb(39, 39, 39);
+      visibility: hidden;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      z-index: 2;
+  }
+
+  .popup-input {
+      width: 120px;
+      height: 20px;
+      border-radius: 7px;
+  }
+
+  .popup-button {
+      width: 100px;
+      height: 25px;
+      background-color: #323336;
+      color: whitesmoke;
+      border-radius: 5px;
+      position: relative;
+      left: 45px;
+  }
+
+  .popup-close {
+      position: relative;
+      top: -25px;
+      left: 284px;
+      border-radius: 100px;
+      background-color: #323336;
+      color: whitesmoke;
+      z-index: 2;
+      cursor: pointer;
+  }
+
+  .popup-title {
+      position: relative;
+      left: 100px;
+  }
+
+  /* age calculator */
+  .age-main {
+      scroll-margin: 50px;
+      position: relative;
+      top: 1250px;
+      left: 20px;
+      z-index: 1;
+  }
+
+  /* weather */
+  .weather-main {
+      position: relative;
+      top: 1300px;
+      left: 20px;
+  }
+
+  .weather-box {
+      width: 250px;
+      height: 200px;
+      background-image: linear-gradient(90deg, rgb(51, 255, 0), rgb(255, 217, 0));
+      padding: 20px;
+      border-radius: 20px;
+  }
+
+  .weather-elements {
+      position: relative;
+      left: 20px;
+      font-size: 30px;
+  }
+
+  .weather {
+      position: relative;
+      left: 30%;
+  }
+
+  /* game */
+  .clickme-container {
+      position: relative;
+      top: 1350px;
+      left: 20px;
+
+  }
+
+  .gamepopup {
+      width: 700px;
+      height: 500px;
+      background-color: rgb(159, 60, 60);
+      visibility: hidden;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      z-index: 2;
+      border: 5px solid rgb(224, 198, 0);
+  }
+
+  .gamepopup .closegame {
+      position: relative;
+      top: 0px;
+      right: 0px;
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+  }
+
+  .clickme-popup {
+      width: 600px;
+      height: 400px;
+      background-image: url(image/canvas1.png);
+      background-size: 600px 400px;
+      visibility: hidden;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      z-index: 3;
+      cursor: grab;
+  }
+
+  .move {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      cursor: grab;
+      border: none;
+      text-align: center;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0);
+  }
+
+  .move img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .selectable {
+      position: relative;
+      top: 20%;
+      left: 20%;
+      visibility: hidden;
+      z-index: 3;
+  }
+
+  /* quote */
+  .api-location {
+      position: relative;
+      top: 1400px;
+      left: 20px;
+      width: 680px;
+  }
+
+  .quote-container {
+      width: 600px;
+      height: fit-content;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+  }
+
+  .quote-author {
+      position: relative;
+      left: 50%;
+  }
+
+  .quote-author::before,
+  .quote-author::after {
+      content: '"';
+  }
+
+  .quote-sentence {
+      font-family: 'Playfair Display', serif;
+  }
+
+  .quote-sentence::before,
+  .quote-sentence::after {
+      content: '"';
+  }
+
+  /* number fact */
+  .numberfact-location {
+      position: relative;
+      top: 1450px;
+      left: 20px;
+  }
+
+  /* tic tac tow */
+  .main {
+      position: absolute;
+      top: 350px;
+      left: 500px;
+  }
+
+  .buttontictactoe {
+      font-size: 135px;
+      width: 150px;
+      height: 150px;
+      border: none;
+      color: rgb(0, 0, 0);
+      background: transparent;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  #tictactoe {
+      border-collapse: collapse;
+      border: hidden;
+  }
+
+  #td1 {
+      border: 10px solid black;
+  }
+
+  .tictext {
+      position: relative;
+      top: 75px;
+      left: 100px;
+      font-size: 75px;
+  }
+
+  .tictext1 {
+      font-size: 30px;
+      left: 25px;
+      position: inherit;
+  }
+
+  #restartbutton {
+      position: inherit;
+      left: 332px;
+  }
+
+  /* calculator */
+  .calculator-location {
+      position: relative;
+      top: 1450px;
+      left: 20px;
+  }
+
+  .calculator {
+      border-radius: 20px;
+      width: fit-content;
+      height: fit-content;
+      background-color: rgb(85, 98, 104);
+      padding: 10px;
+  }
+
+  .calculatorbutton {
+      font-size: 20px;
+      width: 50px;
+      height: 40px;
+      border: none;
+      color: white;
+      background: #323336;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+      transition: box-shadow 0.2s;
+  }
+
+  .pressed {
+      color: black;
+      background: white;
+  }
+
+  .calculatortext {
+      font-size: 25px;
+      width: 230px;
+      height: 55px;
+      border: none;
+      text-align: right;
+      border-radius: 10px;
+      background-color: rgb(37, 35, 35);
+      color: rgb(230, 230, 230);
+  }
+
+  #equal {
+      width: 112px;
+  }
+
+  /* password generator */
+  .passwordgeneratorlocation {
+      position: relative;
+      top: 1500px;
+      left: 20px;
+  }
+
+  .passwordgeneratorbox {
+      width: fit-content;
+      height: fit-content;
+      background-color: rgb(71 71 71);
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+  }
+
+  #passwordputput {
+      align-content: center;
+  }
+
+  #generatepassword {
+      position: relative;
+      left: 45px;
+  }
+
+  /* about me */
+  .socialicon {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+  }

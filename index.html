@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="☘">
+    <meta property="og:description" content="hai i am aromal">
+    <meta property="og:image" content="image/background.png">
+    <meta property="og:url" content="http://aromal.byethost7.com/">
+
+
+    <title></title>
+    <link rel="stylesheet" href="style-v1-25.css">
+    <script src="script-v1-15.js"></script>
+</head>
+
+<body>
+    <div class='reload'>
+        <button class="button" onclick="window.location.reload();">reload</button>
+    </div>
+    <!-- settings button -->
+    <div class="color-button" id="colorbutton">
+        <input type="button" class="button" value="⚙️" onclick="toggleSettings(); buttonsound(1);">
+    </div>
+    <div class="settings" id="settings-popup">
+        <input type="button" class="button" value="⚫" onclick="bgcolor(1)">
+        <input type="button" class="button" value="⚪" onclick="bgcolor(2)"><br><br>
+        press on the image to change wallpaper <br><br>
+        <input type="button" class="circle-button1" value="⏪" onclick="changewallpaper1(1)">
+        <button type="button" class="button wallpaperimage" onclick="changescreen(); buttonsound(1);"><img src="image/background.png" alt="background image" width="100" height="50" id="wallpaperchange"></button>
+        <input type="button" class="circle-button1" value="⏩" onclick="changewallpaper1(2)"><br><br>
+
+        to change wallpaper put your url and press the button <br>
+        <input type="text" class="text1" placeholder="put wallpaper url" id="wallpaper-url">
+        <input type="button" value="&#127966;" class="circle-button1" onclick="changewallpaper(1); buttonsound(1);">&nbsp;
+        <input type="button" value="&#10227;" class="circle-button1" onclick="resetwallpaper(); buttonsound(1);"><br>
+        press on ⚙️ to toggle this popup
+    </div>
+    <!-- features button -->
+    <div class="features-button">
+        <a class="button" href="#aboutme">About me</a>&nbsp;&nbsp;&nbsp;
+        <input type="button" class="button" value="Features" onclick="openfeaturespopup(); buttonsound(1);">
+    </div>
+    <div class="features-popup" id="features-popup">
+        <input type="button" class="circle-button" value="x" onclick="closefeaturespopup()">
+        <center>
+            <h2>FEATURES</h2>
+        </center><br>
+        <ol>
+            <li>Main</li>
+            <ol>
+                <li>Increment and Decrement </li>
+                <ul>
+                    <li>Can press decrement to decrease a number and press increment to increase a number</li>
+                </ul>
+                <li>Login and Signup</li>
+                <ul>
+                    <li>Can type login and signup info in the form and as this site is not linked with database can see that informastions </li>
+                </ul>
+                <li>Age calculator </li>
+                <ul>
+                    <li>Can calculate age by giving year of birth</li>
+                </ul>
+                <li>Weather</li>
+                <ul>
+                    <li>Can find weather or any place in the world by giving place name</li>
+                </ul>
+                <li>Game</li>
+                <ul>
+                    <li>play grab the ball game</li>
+                    <ul>
+                        <li>Can select prefferd ground </li>
+                        <li>Can play a endless game</li>
+                    </ul>
+                    <li>play tic tac toe</li>
+                    <ul>
+                        <li>can play tic tac toe game on another page</li>
+                    </ul>
+                </ul>
+                <li>Api(application programming interface)</li>
+                <ol>
+                    <li>Quote</li>
+                    <ul>
+                        <li>Can see quotes</li>
+                    </ul>
+                    <li>Fact about number</li>
+                    <ul>
+                        <li>Type number and press genereate fact will give a awesome fact about that number</li>
+                        <li>Press genereate fact with out number will generate fact about randum number</li>
+                    </ul>
+                    <li>Joke</li>
+                    <ul>
+                        <li>press another joke to get another joke</li>
+                    </ul>
+                </ol>
+                <li>Calculator</li>
+                <ul>
+                    <li>its just a calculator</li>
+                </ul>
+                <li>Password generator</li>
+                <ul>
+                    <li>give password length and get password of that length</li>
+                </ul>
+            </ol>
+            <li><b>Side</b></li>
+            <ol>
+                <li>Button press audio</li>
+                <ul>Diffrent sound on pressing buttons</ul>
+                <li>Reload button</li>
+                <li>Settings popup</li>
+                <ul>
+                    <li>Change page background color </li>
+                    <li>Change wallpaper</li>
+                    <ul>
+                        <li>Change wallpaper between given wallpapers</li>
+                        <li>Change using custom image url</li>
+                    </ul>
+                </ul>
+                <li>About me button</li>
+            </ol>
+        </ol>
+    </div>
+    <!-- main text -->
+    <div class='text'>
+        <H1>welcome to my webpage </H1>
+        <h4>is this amazing sent your feedback to me 😁<br>
+            scroll down or press below buttons to explore more intresting things <br><br><br>
+            <ul type="circle">
+                Project 1 : <a class="project-button" href="#incrementdecrement">Increment and Decrement</a><br><br>
+                Project 2 : <a class="project-button" href="#loginsignup">Login and Signup</a><br><br>
+                Project 3 : <a class="project-button" href="#age">Age calculator</a><br><br>
+                Project 4 : <a class="project-button" href="#weather">Weather</a><br><br>
+                Project 5 : <a class="project-button" href="#game">Game</a><br><br>
+                Project 6 : <a class="project-button">Api(application programming interface)</a><br><br>
+                <ul type="square">
+                    Project 6.1 : <a class="project-button" href="#quote">Quote</a><br><br>
+                    Project 6.2 : <a class="project-button" href="#numberfacts">Fact about number</a><br><br>
+                    Project 6.3 : <a class="project-button" href="#joke">Joke</a><br><br>
+                </ul>
+
+                Project 7 : <a class="project-button" href="#calculator">calculator</a><br><br>
+                Project 8 : <a class="project-button" href="#passwordgenerator">Password generator</a><br><br>
+
+            </ul>
+        </h4>
+        </h4>
+    </div>
+    <!-- increment decrement -->
+    <div class="incrementdecrement">
+        <form class="container">
+            <h2><A Name="incrementdecrement">Increment and Decrement</A></h2>
+            <h4> Below, you'll find an increment and decrement button. Clicking on 'increment' will increase the number at the center by one, while 'decrement' will decrease it by one. </h4>
+            <input type="button" class="button1" value="decrement" onclick="decrement(); buttonsound(1);">
+            <input type="text" class="text1" id="display" value="0" onkeypress="handleKeyPress(event)">
+            <input type="button" class="button1" value="increment" onclick="increment(); buttonsound(1);">
+            <input type="reset" class="button1">
+        </form>
+    </div>
+    <!-- login and signup -->
+    <div class="loginsignup">
+        <form class="container">
+            <h2><A Name="loginsignup">Login and signup</A></h2>
+            <h4>Below, you'll find a 'Login' and a 'Signup' button. Clicking on 'Login' will open a login popup, while clicking on 'Signup' will bring up a signup popup.</h4>
+            <input type="button" class="button" value="login" onclick="openlogin(1); buttonsound(2);">
+            <input type="button" class="button" value="signup" onclick="openlogin(2); buttonsound(2);">
+        </form>
+    </div>
+    <form class="popup" id="login">
+        <div class="popup-title">Login</div>
+        <input type="reset" class="popup-close" value="x" onclick='closelogin()'>
+        <br>
+        name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' class="popup-input" id="login-name"><br><br>
+        password:&nbsp;&nbsp;&nbsp;&nbsp;<input type='password' class="popup-input" id="login-password"><br><br>
+        <input type='button' class='popup-button' value='submit' onclick='showlogininfo()'>
+        <input type="reset" class="popup-button">
+    </form>
+    <form class="popup" id="signup">
+        <div class="popup-title">Signup</div>
+        <input type="reset" class="popup-close" value="x" onclick='closesignup()'>
+        <p>
+            name: &nbsp;&nbsp;&nbsp; <input type='text' class="popup-input" id="signup-name"><br><br>
+            age: &nbsp;&nbsp;&nbsp;<input type='text' class="popup-input" id="signup-age"><br><br>
+            create password:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input type='password' class="popup-input" id="signup-password"> <br><br>
+            repeat password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type='password' class="popup-input"> <br><br></p>
+        <input type='button' class='popup-button' value='submit' onclick='showsignupinfo()'>
+        <input type="reset" class="popup-button">
+    </form>
+    <!-- age calculator -->
+    <div class="age-main">
+        <div class="container">
+            <h2><A Name="age">Age calculator</A></h2>
+            <h4>Below, you'll find an input field to enter a year. Clicking the 'Calculate Age' button will display your current age </h4> <br>
+            <input type="text" id="year" class="text1" inputmode="numeric" placeholder="year of birth" onkeypress="agekey(event)">
+            <input type="button" value="Calculate Age" class="button" onclick="age()"><br>
+            <h3>age = <output id="ageout"></output></h3>
+        </div>
+    </div>
+    <!-- weather -->
+    <div class="weather-main">
+        <div class="container">
+            <h2><A Name="weather">weather</A></h2>
+            <div class="weather-box">
+                <div class="weather-search">
+                    <input type="text" class="text1" id="search" placeholder="city name" onkeypress="weatherkey(event)">
+                    <input type="button" value="&#128269;" class="circle-button" onclick="weather(); buttonsound(1)">
+                </div>
+                <div class="weather-elements">
+                    <output id="cityname-output"></output><br>
+                    <output class="weather" id="temp"></output><br>
+                    <output class="weather" id="icon"></output><br>
+                    <output id="weather"></output>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- game -->
+    <div class="clickme-container">
+        <div class="container">
+            <h2><A Name="game">Game</A></h2>
+            <h4>Press the below play button to play a game better to play on pc as i made it to work with mouse</h4>
+            <input type="button" class="button" id="openplaypopup" value="play football" onclick="opengamepopup(); buttonsound(4);">&nbsp;&nbsp;&nbsp;
+            <input type="button" class="button" value="play tic tac toe" onclick="opentictactoe(); buttonsound(4);">
+            <div class="gamepopup" id="popup0">
+                <input type="button" class="circle-button" value="x" onclick="closegame()">
+                <div class="gametitle">
+                    <center><b>grab the ball to win!!</b></center>
+                </div>
+                <br><br><br>
+                <center><b>select the preferred ground</b></center>
+                <div class="selectable" id="ground">
+                    <button type="button" class="button" onclick="openplaypopup(2); buttonsound(4);"><img src="image/canvas.jpg" width="200" height="100" alt="selectable ground"></button>
+                    <button type="button" class="button" onclick="openplaypopup(1); buttonsound(4);"><img src="image/canvas1.png" width="200" height="100" alt="selectable ground"></button>
+                </div>
+                <div class="clickme-popup" id="popup">
+                    <button type="button" class="move" onmousemove="move()" onclick="cheater()">
+                        <img src="image/ball.png" alt="Button Image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- api -->
+    <div class="api-location">
+        <div class="container">
+            <h2><A Name="quote">Quote</A></h2>
+            <div class="quote-container">
+                <h2><output class="quote-sentence" id="quotesentence"></output></h2><br>
+                <h3><output class="quote-author" id="quoteauthor"></output></h3>
+            </div><br><br>
+            <center><input type="button" class="button" value="new quote" onclick="quote(); buttonsound(1);"></center>
+            <hr length="100%" size="2px" color="black">
+            <div class="numberfact-container">
+                <h2><A name="numberfacts"> Number facts</A></h2>
+                <h4>enter number to know a fact about it </h4><br>
+                <center><input type="text" class="text1" placeholder="enter number" id="numberfactinput"></center><br>
+                <h3><output id="numberfactoutput"></output><br></h3>
+                <center><input type="button" class="button" value="Generate fact" id="numberfactbutton" onclick="numberfact(); buttonsound(1);"></center>
+            </div>
+            <hr length="100%" size="2px" color="black">
+            <div class="joke">
+                <h2><A name="joke">Joke</A></h2>
+                <h3><output id="jokeoutput"></output></h3><br><br>
+                <center><input type="button" class="button" value="Another joke" onclick="joke(); buttonsound(1);"></center>
+            </div>
+        </div>
+    </div>
+    <!-- calculator -->
+    <div class="calculator-location">
+        <div class="container">
+            <h2><A Name="calculator">Calculator</A></h2>
+            <div class="calculatormain">
+                <table class="calculator" cellspacing="10px">
+                    <tr>
+                        <td colspan="4"><input type="text" class="calculatortext" id="calculatortext" onkeypress="keyanimation(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calculatorbutton" value="CE" id="ce" onclick="cleartext()"></td>
+                        <td><input type="button" class="calculatorbutton" id="percent" value="&percnt;" onclick="display('%')"></td>
+                        <td><input type="button" class="calculatorbutton" id="backspace" value="&larrhk;" onclick="backspace()"></td>
+                        <td><input type="button" class="calculatorbutton" id="divide" value="&divide;" onclick="display('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calculatorbutton" value="7" onclick="display('7')"></td>
+                        <td><input type="button" class="calculatorbutton" value="8" onclick="display('8')"></td>
+                        <td><input type="button" class="calculatorbutton" value="9" onclick="display('9')"></td>
+                        <td><input type="button" class="calculatorbutton" value="*" onclick="display('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calculatorbutton" value="4" onclick="display('4')"></td>
+                        <td><input type="button" class="calculatorbutton" value="5" onclick="display('5')"></td>
+                        <td><input type="button" class="calculatorbutton" value="6" onclick="display('6')"></td>
+                        <td><input type="button" class="calculatorbutton" value="-" onclick="display('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calculatorbutton" value="1" onclick="display('1')"></td>
+                        <td><input type="button" class="calculatorbutton" value="2" onclick="display('2')"></td>
+                        <td><input type="button" class="calculatorbutton" value="3" onclick="display('3')"></td>
+                        <td><input type="button" class="calculatorbutton" value="+" onclick="display('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calculatorbutton" value="0" onclick="display('0')"></td>
+                        <td><input type="button" class="calculatorbutton" value="." onclick="display('.')"></td>
+                        <td colspan="2"><input type="button" class="calculatorbutton" value="=" id="equal" onclick="calculate()"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- password generator -->
+    <div class="passwordgeneratorlocation">
+        <div class="container">
+            <h2><A name="passwordgenerator">Password generator</A></h2>
+            <div class="passwordgeneratorbox">
+                Password : <output class="text1" id="passwordoutput"></output><br>
+                Enter password length : <input type="text" class="text1" id="passwordlength" placeholder="password length" onkeypress=" keytopass(event)"><br><br><br>
+                <input type="button" id="generatepassword" class="button" value="generate" onclick="generatepassword(); buttonsound(1);">
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <div class="aboutme">
+        <h2><A Name="aboutme">About me</A></h2>
+        <div class="aboutme-text">
+            <p>
+                Hai, i am <b>Aromal A S</b>
+            </p>
+            <p> A student currently of College of engineering Attingal and living in Thiruvananthapuram, Kerala. <br>
+            <h3>Phone no: 8289954895 <br>
+                email id: a.s.aromal2006@gmail.com </p>
+            </h3> <br>
+            <button class="socialicon" onclick="window.open('https://wa.me/8289954895'); buttonsound(1);"><img src="image/whatsapplogo.png" width="30px" height="30px" alt="whatsapp logo"></button>&nbsp;&nbsp;&nbsp;
+            <button class="socialicon" onclick="window.open('https://www.instagram.com/_.axxro__'); buttonsound(1);"><img src="image/instalogo.png" width="30px" height="30px" alt=instagram logo"></button>
+        </div>
+    </div>
+</body>
+
+</html>

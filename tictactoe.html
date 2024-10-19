@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-v1-25.css">
+    <script src="script-v1-15.js"></script>
+</head>
+
+<body>
+    <div class='reload'>
+        <button class="button" onclick="mainpage()">main page</button>
+    </div>
+    <div class="color-button" id="colorbutton">
+        <input type="button" class="button" value="⚙️" onclick="toggleSettings(); buttonsound(1);">
+    </div>
+    <div class="settings" id="settings-popup">
+        <input type="button" class="button" value="⚫" onclick="bgcolor(1)">
+        <input type="button" class="button" value="⚪" onclick="bgcolor(2)"><br><br>
+        press on the image to change wallpaper <br><br>
+        <input type="button" class="circle-button1" value="⏪" onclick="changewallpaper1(1)">
+        <button type="button" class="button wallpaperimage" onclick="changescreen(); buttonsound(1);"><img src="image/background.png" alt="background image" width="100" height="50" id="wallpaperchange"></button>
+        <input type="button" class="circle-button1" value="⏩" onclick="changewallpaper1(2)"><br><br>
+
+        to change wallpaper put your url and press the button <br>
+        <input type="text" class="text1" placeholder="put wallpaper url" id="wallpaper-url">
+        <input type="button" value="&#127966;" class="circle-button1" onclick="changewallpaper(1); buttonsound(1);">&nbsp;
+        <input type="button" value="&#10227;" class="circle-button1" onclick="resetwallpaper(); buttonsound(1);"><br>
+        press on ⚙️ to toggle this popup
+    </div>
+    <div class="tictext">Tic Tac Toe
+        <div class="tictext1">
+            play untill you are blind
+        </div>
+    </div>
+
+    <div class="main">
+        <table id="tictactoe" cellspacing="2px">
+            <tr>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic1" value="" onclick="tictactoe(1); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic2" value="" onclick="tictactoe(2); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic3" value="" onclick="tictactoe(3); buttonsound(4);"></td>
+            </tr>
+            <tr>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic4" value="" onclick="tictactoe(4); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic5" value="" onclick="tictactoe(5); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic6" value="" onclick="tictactoe(6); buttonsound(4);"></td>
+            </tr>
+            <tr>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic7" value="" onclick="tictactoe(7); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic8" value="" onclick="tictactoe(8); buttonsound(4);"></td>
+                <td id="td1"><input type="button" class="buttontictactoe" id="tic9" value="" onclick="tictactoe(9); buttonsound(4);"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" class="button" id="restartbutton" value="restart game" onclick="resetboard()">
+    </div>
+</body>
+
+</html>
