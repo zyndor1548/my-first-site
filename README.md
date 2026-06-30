@@ -13,7 +13,7 @@ This repository contains the code for my first website, created as a learning pr
 
 ## Features
 
-- Client-side functionality without any server-side languages like PHP.
+- Client-side functionality without any server-side languages like PHP.seargvsegv
 - Basic design with a focus on CSS styling, following a more traditional website layout.
 - Desktop-only view, as I was not familiar with responsive web design techniques at the time of creation.
 
