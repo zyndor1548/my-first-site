@@ -17,3 +17,4 @@ This repository contains the code for my first website, created as a learning pr
 - Basic design with a focus on CSS styling, following a more traditional website layout.
 - Desktop-only view, as I was not familiar with responsive web design techniques at the time of creation.
 
+test
