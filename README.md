@@ -2,7 +2,7 @@
 
 This repository contains the code for my first website, created as a learning project while I was studying HTML, CSS, and JavaScript. The site was developed as a client-side only application, utilizing various APIs to enhance functionality.
 
-## Description
+## Description  
 
 - **Purpose**: The website was built as a test project to practice and implement the concepts I was learning in web development.
 - **Technologies Used**:
